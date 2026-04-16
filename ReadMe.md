@@ -10,3 +10,4 @@ Parcial2AppWeb/
 ├── backend/          → API REST en Node.js
 └── frontend/         → App Angular
 ```
+
