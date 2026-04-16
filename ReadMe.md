@@ -1,4 +1,4 @@
-# Parcial 2 - Apliaciones Web
+# Parcial 2 - Aplicaciones Web
 ## Luis Quan 201927151
 
 > Este proyecto esta pensado para pruebas locales y usando Supabase como base de datos, libre de cambiar a cualquier otra que utilice PostgreSQL
@@ -49,6 +49,15 @@ cd backend
 npm install
 npm run dev     # Corre nuestro servicio en http://localhost:3000
 ```
+> **Importante:** Este proyecto requiere `bcryptjs@2.4.3`. 
+> No usar v3 ya que los hashes del seed son incompatibles con esa versión.
+> Si ya instalaste una versión mayor, ejecuta:
+> ```
+> npm uninstall bcryptjs
+> npm install bcryptjs@2.4.3
+> ```
+
+
 
 ### 3. Frontend
 ```bash
@@ -92,7 +101,7 @@ Todos tienen la misma contraseña: **`123456`**
 Crear el archivo `backend/.env` con:
 
 ```env
-DB_HOST==************************
+DB_HOST=************************
 DB_PORT=5432
 DB_NAME=postgres
 DB_USER=*************
@@ -100,4 +109,13 @@ DB_PASSWORD=***********
 PORT=3000
 ```
 
-> **Nota:** Usar el host del Session Pooler de Supabase, no la conexión directa. En Supabase en tu base de datos conexion, Direct, Session pooler.
+> **Nota:** Usar el host del Session Pooler de Supabase. Se encuentra en: Project Settings → Database → Connect → Session mode
+
+
+## Problemas conocidos
+
+| Error | Causa | Solución |
+|-------|-------|----------|
+| "Credenciales incorrectas" al hacer login | Versión de bcryptjs incompatible con los hashes del seed | Instalar `bcryptjs@2.4.3` |
+| `ENOTFOUND db.xxx.supabase.co` | Usando conexión directa en vez del pooler | Usar el host del Session Pooler en el `.env` |
+
