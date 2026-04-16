@@ -32,3 +32,10 @@ database/schema.sql   → crea las tablas (usuarios y perfil)
 database/seed.sql     → creamos los usuarios de Test para hacer pruebas
 ```
 
+### 2. Backend
+
+```bash
+cd backend
+npm install
+npm run dev     # Corre nuestro servicio en http://localhost:3000
+```
