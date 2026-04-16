@@ -40,3 +40,40 @@ npm install
 npm run dev     # Corre nuestro servicio en http://localhost:3000
 ```
 
+### 3. Frontend
+```bash
+cd frontend
+npm install
+ng serve        # levanta en http://localhost:4200
+```
+
+Abrir el navegador en: **http://localhost:4200**
+
+---
+
+## Usuarios de prueba
+
+Todos tienen la misma contraseña: **`123456`**
+
+| Usuario | Correo |
+|---------|--------|
+| admin | admin@test.com |
+| usuario1 | usuario1@test.com |
+| usuario2 | usuario2@test.com |
+| ... | ... |
+| usuario10 | usuario10@test.com |
+
+---
+
+## Endpoints de la API
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | `/` | Verificar que la API está activa |
+| POST | `/auth/login` | Iniciar sesión |
+| GET | `/perfil?usuario_id=X` | Obtener perfil |
+| POST | `/perfil` | Crear perfil |
+| PUT | `/perfil` | Actualizar perfil |
+
+---
+
