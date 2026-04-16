@@ -46,6 +46,7 @@ database/seed.sql     → creamos los usuarios de Test para hacer pruebas
 
 ```bash
 cd backend
+cp .env.example .env   # Copiar plantilla y rellenar con tus informacion de Supabase
 npm install
 npm run dev     # Corre nuestro servicio en http://localhost:3000
 ```
