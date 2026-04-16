@@ -21,6 +21,15 @@ Parcial2AppWeb/
 
 ---
 
+## Clonar el repositorio
+
+```bash
+git clone https://github.com/primoquan/Parcial2AppWeb
+cd Parcial2AppWeb
+```
+
+---
+
 ## Pasos para crear el proyecto
 
 ### 1. Base de datos
