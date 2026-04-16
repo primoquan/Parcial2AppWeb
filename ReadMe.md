@@ -1,6 +1,7 @@
 # Parcial 2 - Apliaciones Web
 ## Luis Quan 201927151
 
+> Este proyecto esta pensado para pruebas locales y usando Supabase como base de datos, libre de cambiar a cualquier otra que utilice PostgreSQL
 
 ## Estructura del proyecto
 
@@ -86,3 +87,17 @@ Todos tienen la misma contraseña: **`123456`**
 
 ---
 
+## Variables de entorno
+
+Crear el archivo `backend/.env` con:
+
+```env
+DB_HOST==************************
+DB_PORT=5432
+DB_NAME=postgres
+DB_USER=*************
+DB_PASSWORD=***********
+PORT=3000
+```
+
+> **Nota:** Usar el host del Session Pooler de Supabase, no la conexión directa. En Supabase en tu base de datos conexion, Direct, Session pooler.
