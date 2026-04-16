@@ -95,24 +95,6 @@ Todos tienen la misma contraseña: **`123456`**
 | POST | `/perfil` | Crear perfil |
 | PUT | `/perfil` | Actualizar perfil |
 
----
-
-## Variables de entorno
-
-Crear el archivo `backend/.env` con:
-
-```env
-DB_HOST=************************
-DB_PORT=5432
-DB_NAME=postgres
-DB_USER=*************
-DB_PASSWORD=***********
-PORT=3000
-```
-
-> **Nota:** Usar el host del Session Pooler de Supabase. Se encuentra en: Project Settings → Database → Connect → Session mode
-
-
 ## Problemas conocidos
 
 | Error | Causa | Solución |
